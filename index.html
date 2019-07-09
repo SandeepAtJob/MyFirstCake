@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mobile Measure</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://surveyjs.azureedge.net/1.0.95/survey.jquery.js"></script>
+        <link href="https://surveyjs.azureedge.net/1.0.95/survey.css" type="text/css" rel="stylesheet"/>
+        
+        <script src="https://unpkg.com/surveyjs-widgets/surveyjs-widgets.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
+        <link rel="stylesheet" href="./cake1.css">
+    </head>
+    <body>
+        <!-- CSS discreteProgress
+        <div id="surveyProgress" class="discreteProgress"></div>-->
+        
+        <!-- CSS w3 School-->
+        <div class="w3-light-grey w3-round-large">
+            <div id="surveyProgress" class="w3-container w3-round-large w3-center w3-blue" style="width:0%">0%</div>
+        </div>
+
+        <!--        <span id="surveyProgress"></span>-->
+        <a id="surveyPrev" href="#" onclick="survey.prevPage();"></a>
+        <a id="surveyNext" href="#" onclick="survey.nextPage();"></a>
+        <a id="surveyComplete" href="#" onclick="survey.completeLastPage();"></a>
+
+        <div id="surveyElement"></div>
+        <div id="surveyResult"></div>
+
+        <script type="text/javascript" src="./cake1.js"></script>
+
+    </body>
+</html>
